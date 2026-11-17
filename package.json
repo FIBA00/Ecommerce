@@ -1,0 +1,27 @@
+{
+  "name": "ecommerce-educational-app",
+  "version": "1.0.0",
+  "description": "Educational Next.js and NestJS Ecommerce Application",
+  "scripts": {
+    "db:up": "docker compose up -d postgres",
+    "db:down": "docker compose down",
+    "backend:dev": "npm --prefix backend run start:dev",
+    "backend:build": "npm --prefix backend run build",
+    "backend:test": "npm --prefix backend run test",
+    "backend:seed": "npm --prefix backend run seed",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "frontend:lint": "npm --prefix frontend run lint",
+    "test:e2e": "node tests/e2e/run-all.mjs"
+  },
+  "keywords": [
+    "nestjs",
+    "nextjs",
+    "typeorm",
+    "postgresql",
+    "ecommerce",
+    "educational"
+  ],
+  "author": "",
+  "license": "MIT"
+}
